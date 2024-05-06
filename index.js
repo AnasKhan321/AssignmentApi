@@ -11,8 +11,6 @@ ConnectToMongo();
 app.use('/api/auth' , require('./Routes/Auth.js')); 
 app.use('/api/gym' , require('./Routes/Gym.js')); 
 
-// app.use('/api/post' , require('./Routes/Posts/router.js')); 
-// app.use('/api/UserDetail' , require('./Routes/UserDetail/router.js'))
 app.get('/', (req, res) => {
   res.send('Hello World!')
 })
